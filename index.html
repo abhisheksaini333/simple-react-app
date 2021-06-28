@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js" crossorigin></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js" crossorigin></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js" crossorigin></script>
+    </head>
+    <body>
+        <!-- <h1>Simple React App</h1> -->
+
+        <div id="root"></div>
+
+        <script type="text/babel">
+            // (1) to create a react component
+            class Header extends React.Component {
+                
+                render() {
+                    return (
+                        <h1>Simple React App</h1>
+                    );
+                }
+            }
+
+            // (2) render the component on the HTML element with id="root"
+            ReactDOM.render(
+                <Header />,
+                document.getElementById("root")
+            );
+        </script>
+    </body>
+</html>
